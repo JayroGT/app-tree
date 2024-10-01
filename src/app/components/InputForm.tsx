@@ -11,7 +11,7 @@ const InputForm: React.FC = () => {
         try {
             const parsedInput = JSON.parse(input);
             processArray(parsedInput);
-        } catch (error) {
+        } catch (error:any) {
             alert('Invalid JSON input');
         }
     };
